@@ -1,0 +1,23 @@
+env: development
+
+server:
+  port: 8080
+  readTimeoutSeconds: 5
+  writeTimeoutSeconds: 10
+
+database:
+  host: localhost
+  port: 5432
+  user: postgres
+  pass: m
+  name: go_auth_api
+  maxConns: 10
+  minConns: 2
+  maxConnLifetimeMinutes: 60
+
+security:
+  jwtSecret: "supersecret_change_me"
+
+logging:
+  level: info # debug|info|warn|error
+  json: true # true: JSON logs; false: console logs
